@@ -128,12 +128,16 @@ def main(argv):
                 print('Something went wrong!')
 
         if re.search('no match|not found', output):
-            print('{} is available!'.format(domain))
+            file_path = 'domain_output.txt'
+            with open(file_path, 'a') as file:
+                 file.write('{} is available!\n'.format(domain))
+
+            #print('{} is available!'.format(domain))
         elif verbose:
             try: expires = re.search('.*expi(res?|ry|ration).*?:\s*([-0-9a-z/: ]+)', output).group(2)
             except AttributeError: expires = 'unknown'
 
-            print('{} is unavailable.\texpires: {}'.format(domain, expires))
+            #print('{} is unavailable.\texpires: {}'.format(domain, expires))
 
         time.sleep(sleep_time)
 
