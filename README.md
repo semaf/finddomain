@@ -38,7 +38,9 @@ that still are unregistered.
 
 ### Example
     finddomain -c 3 -t se -l abc
+    
 or
+
     finddomain --length=3 --top-level-domain=se --letters=abc
     
 ### Exmaple to run in background
