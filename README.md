@@ -38,16 +38,17 @@ that still are unregistered.
 
 ### Example
     finddomain -c 3 -t se -l abc
+or
+    finddomain --length=3 --top-level-domain=se --letters=abc
+    
 ### Exmaple to run in background
     finddomain -c 3 -t se -l abc &
-
-or
-
-    finddomain --length=3 --top-level-domain=se --letters=abc
     
 or to run in background
 
     finddomain --length=3 --top-level-domain=se --letters=abc &
+    
+
 
 Will output if # from print() is removed else will be saved in file domain_output.txt:  
 
