@@ -37,13 +37,19 @@ that still are unregistered.
     Default: Set if single tld is being used.
 
 ### Example
-    finddomain -c 3 -t se -l abc  
+    finddomain -c 3 -t se -l abc
+### Exmaple to run in background
+    finddomain -c 3 -t se -l abc &
 
 or
 
     finddomain --length=3 --top-level-domain=se --letters=abc
+    
+or to run in background
 
-Will output:  
+    finddomain --length=3 --top-level-domain=se --letters=abc &
+
+Will output if # from print() is removed else will be saved in file domain_output.txt:  
 
     aaa.se is unavailable.  expires: 2014-12-31
     aab.se is unavailable.  expires: 2014-06-06
