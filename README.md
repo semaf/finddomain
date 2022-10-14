@@ -43,15 +43,6 @@ or
 
     finddomain --length=3 --top-level-domain=se --letters=abc
     
-### Exmaple to run in background
-    finddomain -c 3 -t se -l abc &
-    
-or to run in background
-
-    finddomain --length=3 --top-level-domain=se --letters=abc &
-    
-
-
 Will output if # from print() is removed else will be saved in file domain_output.txt:  
 
     aaa.se is unavailable.  expires: 2014-12-31
@@ -62,6 +53,15 @@ Will output if # from print() is removed else will be saved in file domain_outpu
     abc.se is unavailable.  expires: 2014-12-31
     aca.se is unavailable.  expires: 2015-02-10
     ...
+    
+### Exmaple to run in background
+    finddomain -c 3 -t se -l abc &
+    
+or to run in background
+
+    finddomain --length=3 --top-level-domain=se --letters=abc &
+
+Output will be saved in file "domain_output.txt"
 
 ## Licensing
 
